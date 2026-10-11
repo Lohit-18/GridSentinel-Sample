@@ -1,0 +1,12 @@
+# Core (everything except the dashboard runs on these)
+numpy>=1.23
+scipy>=1.9
+scikit-learn>=1.2
+pandas>=1.5
+matplotlib>=3.6
+rich>=12.0
+joblib>=1.2
+
+# Interactive dashboard (optional): pip install -r requirements.txt
+streamlit>=1.28
+plotly>=5.15

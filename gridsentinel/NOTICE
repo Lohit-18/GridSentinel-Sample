@@ -1,0 +1,11 @@
+GridSentinel
+Copyright 2026 Lohit Shanmugam
+
+This product includes software developed as a defensive, synthetic research and
+education project for the detection of false data injection in smart-grid
+substations.
+
+Licensed under the Apache License, Version 2.0. See the LICENSE file.
+
+This software is fully synthetic and offline: it does not connect to, probe, or
+transmit to any real power-grid device or network. See ETHICS.md.

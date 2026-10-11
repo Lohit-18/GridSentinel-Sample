@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use GridSentinel in your research, please cite it as below."
+title: "GridSentinel: Machine-Learning Detection of False Data Injection in Smart-Grid Substations"
+abstract: >-
+  GridSentinel is a defensive, fully synthetic toolkit that detects false data
+  injection (FDI) attacks against power-grid state estimation and IEC 61850 GOOSE
+  messaging. It combines a physics-based chi-square baseline with a stacked
+  machine-learning ensemble (random forest, gradient boosting, neural network and
+  isolation forest) over multi-domain features, and demonstrably catches the
+  stealthy residue-preserving attacks the classical detector is blind to.
+type: software
+version: "1.0.0"
+date-released: "2026-10-11"
+license: Apache-2.0
+repository-code: "https://github.com/Lohit-18/GridSentinel"
+authors:
+  - family-names: Shanmugam
+    given-names: Lohit
+keywords:
+  - cybersecurity
+  - smart grid
+  - false data injection
+  - state estimation
+  - IEC 61850
+  - GOOSE
+  - anomaly detection
+  - machine learning

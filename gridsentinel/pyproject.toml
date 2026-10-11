@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gridsentinel"
+version = "1.0.0"
+description = "Machine-learning detection of false data injection in smart-grid substations (IEC 61850 / state estimation) — defensive, fully synthetic."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Lohit Shanmugam" }]
+keywords = [
+    "cybersecurity", "smart-grid", "false-data-injection", "state-estimation",
+    "iec-61850", "goose", "anomaly-detection", "machine-learning", "scada", "ics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "scikit-learn>=1.2",
+    "pandas>=1.5",
+    "matplotlib>=3.6",
+    "rich>=12.0",
+    "joblib>=1.2",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.28", "plotly>=5.15"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/Lohit-18/GridSentinel"
+Repository = "https://github.com/Lohit-18/GridSentinel"
+Issues = "https://github.com/Lohit-18/GridSentinel/issues"
+
+[project.scripts]
+gridsentinel = "gridsentinel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::UserWarning",
+    "ignore::FutureWarning",
+    "ignore:Stochastic Optimizer:UserWarning",
+]
